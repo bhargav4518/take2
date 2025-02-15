@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Surprise</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- First Screen -->
+  <div class="screen first-screen">
+    <button class="click-btn" onclick="showSecondScreen()">Click Here</button>
+  </div>
+
+  <!-- Second Screen -->
+  <div class="screen second-screen hidden">
+    <h1>Hi Kaku, Aaj Aap Ka Birthday Hai Na? </h1>
+    <p class="second-text">Toh Isse Click Karo!</p>
+    <button class="heart-btn" onclick="showFinalScreen()">❤️</button>
+  </div>
+
+  <!-- Final Screen -->
+  <div class="screen final-screen hidden">
+    <h1 id="wishing-line">Wishing You the Happiest Birthday MADAMJI 🤌🏻🌹❣</h1>
+    <p>Tmr ahibologia din bilak jate tmr dore sweet houk 🫣❣</p>
+    <audio id="birthday-song">
+      <source src="Happy Birthday Kakali! .mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+    <canvas id="fireworksCanvas"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
